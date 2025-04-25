@@ -18,8 +18,7 @@ h1 {
 .container::-webkit-scrollbar {
   width: 6px;
 }
-
-.container::-webkit-scrollbar-thumb {
+ㄴ .container::-webkit-scrollbar-thumb {
   background-color: #ccc;
   border-radius: 4px;
 }
