@@ -28,7 +28,7 @@ const Graph = () => {
           name: `${reversed.length - index}`,
           income: item.type === 'income' ? amount : 0,
           expense: item.type === 'expense' ? amount : 0,
-          balance: runningBalance, // ✅ 누적 잔액
+          balance: runningBalance,
           labelText: item.text,
         }
       })

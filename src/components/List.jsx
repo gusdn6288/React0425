@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import TransactionList from './TransactionList'
-import css from './List.module.css' // ✅ 스타일 파일 임포트 (선택)
+import css from './List.module.css'
 
 const List = () => {
   const [transactions, setTransactions] = useState([])

@@ -21,7 +21,7 @@ const Transaction = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const parsedAmount = Number(amount)
-    // ❗ 입력 안 했을 때 alert로 경고
+
     if (!text.trim()) {
       alert('내용을 입력해주세요.')
       return
