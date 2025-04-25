@@ -55,3 +55,23 @@
   font-size: var(--fs26);
   color: #111827;
 }
+
+.text {
+  display: inline-block;
+  max-width: 120px;
+  height: 20px; /* ✅ 높이 고정 */
+  line-height: 20px; /* ✅ 텍스트 정렬 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: max-width 0.3s ease;
+}
+
+.expanded {
+  max-width: 1000px;
+  white-space: normal; /* 줄바꿈 허용 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 여전히 말줄임 유지 */
+  height: 20px; /* ✅ 높이 유지 */
+}
