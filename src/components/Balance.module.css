@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #1f2937;
+}

@@ -1,0 +1,51 @@
+.history {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+.history h2 {
+  font-size: 38px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-left: 4px solid gray;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.item:hover {
+  background: #f1f5f9;
+}
+
+.income {
+  border-left-color: #22c55e; /* green */
+}
+
+.expense {
+  border-left-color: #ef4444; /* red */
+}
+
+.deleteBtn {
+  cursor: pointer;
+  color: #ef4444;
+  font-size: 16px;
+  margin-right: 8px;
+  user-select: none;
+  transition: transform 0.1s ease;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.2);
+}
+
+.item span {
+  font-size: 15px;
+  color: #111827;
+}
