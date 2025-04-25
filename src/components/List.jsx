@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import TransactionList from './TransactionList'
+import css from './List.module.css' // ✅ 스타일 파일 임포트 (선택)
 
 const List = () => {
   const [transactions, setTransactions] = useState([])
@@ -23,7 +24,6 @@ const List = () => {
     }
 
     window.addEventListener('transactionsUpdated', handleUpdate)
-
     return () => {
       window.removeEventListener('transactionsUpdated', handleUpdate)
     }
@@ -33,14 +33,19 @@ const List = () => {
     const filtered = transactions.filter(item => item.id !== id)
     setTransactions(filtered)
     localStorage.setItem('transactions', JSON.stringify(filtered))
-
-    // 🔔 삭제 후에도 커스텀 이벤트 발생
     window.dispatchEvent(new Event('transactionsUpdated'))
   }
 
   return (
-    <div>
-      <TransactionList transactions={transactions} onDelete={handleDelete} />
+    <div className={transactions.length === 0 ? css.wrapper : ''}>
+      {transactions.length === 0 ? (
+        <div className={css.empty}>
+          <span>💬</span>
+          <span>내역이 없습니다</span>
+        </div>
+      ) : (
+        <TransactionList transactions={transactions} onDelete={handleDelete} />
+      )}
     </div>
   )
 }

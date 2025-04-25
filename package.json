@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -31,5 +32,5 @@
     "prettier": "^3.5.3",
     "vite": "^6.3.1"
   },
-  "homepage": "https://github.com/gusdn6288/React0425.git"
+  "homepage": "https://github.com/gusdn6288/"
 }

@@ -1,12 +1,17 @@
+/* TransactionList.module.css */
 .history {
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  max-height: 260px; /* 또는 100% */
+  overflow-y: auto;
+  padding-right: 8px;
 }
-.history h2 {
+
+.title {
   font-size: 38px;
   color: #333;
+  margin-top: 10px;
   margin-bottom: 10px;
+  font-size: var(--fs33);
+  color: white;
 }
 .item {
   display: flex;
@@ -21,7 +26,7 @@
 }
 
 .item:hover {
-  background: #f1f5f9;
+  background: #f1f5f98a;
 }
 
 .income {

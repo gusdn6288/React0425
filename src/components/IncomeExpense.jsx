@@ -24,10 +24,8 @@ const IncomeExpense = () => {
   }
 
   useEffect(() => {
-    // 초기 계산
     calculateTotals()
 
-    // 커스텀 이벤트 수신
     const handleUpdate = () => {
       calculateTotals()
     }

@@ -4,7 +4,6 @@
   gap: 10px;
   padding: 10px;
   height: 100%;
-  border: 1px solid blue;
 }
 
 input {
@@ -32,7 +31,7 @@ input {
 
 .radioLabel input[type='radio'] {
   transform: scale(1.5);
-  accent-color: #6366f1;
+  accent-color: #0064ff;
 }
 
 .submitBtn {
@@ -40,11 +39,36 @@ input {
   font-size: 25px;
   border: none;
   border-radius: 6px;
-  background-color: #a78bfa;
+  background-color: #0064ff;
   color: white;
   cursor: pointer;
 }
 
 .submitBtn:hover {
-  background-color: #7c3aed;
+  background-color: #255194de;
+}
+.history {
+  max-height: 300px; /* 원하는 최대 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  padding-right: 8px; /* 스크롤과 글자 겹침 방지 */
+}
+
+/* 선택사항: 스크롤바 스타일 (크롬 기준) */
+.history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 6px;
+  background-color: #f9fafb;
+  border-radius: 6px;
 }

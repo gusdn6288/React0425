@@ -4,24 +4,28 @@
   border-radius: 8px;
   padding: 16px;
   background-color: #fff;
+
   justify-content: space-around;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 10px auto;
 }
 
 .section {
   text-align: center;
+  display: flex;
+  gap: 10px;
+  font-size: var(--fs26);
 }
 
 .income {
   color: #22c55e;
-  margin-top: 4px;
+  font-size: var(--fs26);
 }
 
 .expense {
   color: #ef4444;
-  margin-top: 4px;
+  font-size: var(--fs26);
 }
 
 .separator {

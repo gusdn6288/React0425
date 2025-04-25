@@ -58,12 +58,12 @@ body {
   line-height: 1.6;
 }
 body {
-  background-color: #eaeaea;
+  background-color: #202632;
 }
 
 main,
 footer {
-  max-width: 1200px;
+  max-width: 1600px;
   width: calc(100% - 4rem);
   margin: auto;
 }
@@ -75,6 +75,17 @@ footer {
 }
 main h2 {
   font-size: var(--fs33);
+  color: white;
+}
+
+main h1 {
+  font-size: var(--fs64);
+  color: white;
+  margin-bottom: 50px;
+}
+
+label {
+  color: white;
 }
 
 a {

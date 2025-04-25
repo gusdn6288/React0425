@@ -32,7 +32,9 @@ const Balance = () => {
   return (
     <div className={css.container}>
       <strong className={css.label}>잔액</strong>
-      <div className={css.amount}>₩{balance.toLocaleString()}</div>
+      <div className={`${css.amount} ${balance >= 0 ? css.positive : css.negative}`}>
+        ₩ {balance.toLocaleString()}
+      </div>
     </div>
   )
 }
