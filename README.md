@@ -1,12 +1,23 @@
-# React + Vite
+# 💸 용돈 관리 페이지 (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React 기반으로 만든 **심플한 용돈 가계부 웹앱**입니다.  
 
-Currently, two official plugins are available:
+## 🛠️ 사용 기술
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – 컴포넌트 기반 UI 구성
+- **Vite** – 빠른 개발 서버와 빌드 도구
+- **CSS Modules** – 스타일 캡슐화 및 컴포넌트 단위 스타일링
+- **Recharts** – 수입/지출/잔액을 시각화하는 라인 그래프
+- **localStorage** – 데이터를 브라우저에 저장하여 새로고침에도 유지
 
-## Expanding the ESLint configuration
+## 📊 주요 기능
+- ✍️ 수입 및 지출 내역 등록
+- 📌 항목 삭제 기능
+- 💰 실시간 잔액 계산
+- 📈 누적 잔액 그래프 시각화
+- 📱 반응형 레이아웃 지원 (모바일 최적화)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 개발 환경
+- Vite + React
+- ESLint 포함 (코드 품질 관리)
+
